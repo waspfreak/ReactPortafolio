@@ -1,0 +1,19 @@
+.top-bar{
+  background-color: $nav-brackground;
+  ul{
+      background-color: $nav-brackground;
+  }
+  .menu-text{
+    color: $nav-text-color;
+  }
+  .menu > li > a{
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.title-bar {
+      background-color: $link;
+    color: #fefefe;
+    padding: .5rem;
+}
