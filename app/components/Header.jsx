@@ -11,14 +11,18 @@ var Header = (props) => {
       <div className="callout primary">
         <div className="row column">
           <div className="top-bar-right">
-            <img src="http://waspfreak.github.io/img/logo.png" width="100px" alt="logo"/>
+            <img src={logo} width="100px" alt="logo"/>
           </div>
-          <h1>Hello! This is a ReactJs </h1>
-          <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+          <h1>{titleHeader}</h1>
+          <p className="lead">{subTitle}</p>
         </div>
       </div>
     </div>
   )
 };
+
+let logo = "http://waspfreak.github.io/img/logo.png";
+let titleHeader = "Hello this is ReactJs portafolio";
+let subTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla."
 
 module.exports = Header;

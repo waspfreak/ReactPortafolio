@@ -3,19 +3,22 @@ var React = require('react');
 var Form = (props) => {
   return(
     <div className="medium-6 columns">
-      <label>Name
+      <label>{name}
         <input type="text" placeholder="Name"/>
       </label>
-      <label>Email
+      <label>{emailForm}
         <input type="text" placeholder="Email"/>
       </label>
-      <label>
-        Message
+      <label>{messageForm}
         <textarea placeholder="holla at a designerd"></textarea>
       </label>
       <input type="submit" className="button expanded" value="Submit"/>
     </div>
   )
 };
+
+let name = "Name";
+let emailForm = "Email";
+let messageForm = "Message";
 
 module.exports = Form;

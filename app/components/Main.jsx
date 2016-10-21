@@ -22,17 +22,21 @@ var Main = (props) => {
     <div>
       <div className="off-canvas-wrapper">
         <div className="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-          <Sidebar />
-          <div className="off-canvas-content" data-off-canvas-content>
+
+        <Sidebar />
+
+        <div className="off-canvas-content" data-off-canvas-content>
             <Header />
             <Item/>
             <Footer/>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   )
 };
+
+
 
 module.exports = Main;
