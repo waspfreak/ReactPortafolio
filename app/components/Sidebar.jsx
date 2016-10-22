@@ -1,24 +1,33 @@
 var React = require('react');
+var Logo = require('Logo');
+var FontAwesome = require('react-fontawesome');
 
+class Sidebar extends React.Component {
+  render (){
+    let logoImg = this.props.logoImg;
+    let logoAlt = this.props.logoAlt;
+    let pic = this.props.pic;
+    let nameCv = this.props.nameCv;
+    let intro = this.props.intro;
+    let subtitle = this.props.subtitle;
 
-var Sidebar = (props) => {
-  return(
-    <div className="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-      <div className="row column">
-        <img src={logo} width="100px" alt="logo"/>
-        <img src={pic}/>
-        <h5>{NameCv}</h5>
-
-        <p>{Intro}</p>
+    return(
+      <div className="off-canvas position-left reveal-for-large sidebar" id="my-info" data-off-canvas data-position="left">
+        <div className="row column">
+          <Logo logoImg={logoImg} logoAlt={logoAlt}/>
+          <img className="cv_picture" src={pic}/>
+          <h4 className="cv_title">{nameCv}</h4>
+          <h5 className="cv_subtitle">{subtitle}</h5>
+          <p>{intro}</p>
+        </div>
+        <ul className="menu">
+         <li><a href="#"><FontAwesome className='icon'name='linkedin'size='2x'/></a></li>
+         <li><a href="#"><FontAwesome className='icon'name='facebook'size='2x'/></a></li>
+         <li><a href="#"><FontAwesome className='icon'name='phone'size='2x'/></a></li>
+        </ul>
       </div>
-    </div>
-  )
+    );
+  }
 };
-
-let logo = "http://waspfreak.github.io/img/logo.png";
-let pic = "http://waspfreak.github.io/img/8807626.png";
-let NameCv = "Juliana Leon";
-let Intro = "Duis aliquet egestas purus in blandit Curabitur vulputate, ligula lacinia scelerisque tempor,lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo."
-
 
 module.exports = Sidebar;

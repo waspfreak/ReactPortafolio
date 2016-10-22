@@ -1,3 +1,15 @@
 .off-canvas{
   background: #fff;
 }
+.off-canvas-content{
+  box-shadow: none;
+  border-left: 1px solid #ddd;
+}
+.sidebar{
+  .logo{
+    padding: 10% 15%;
+  }
+  .cv_picture{
+        border-radius: 50%;
+  }
+}

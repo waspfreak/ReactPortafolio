@@ -1,0 +1,29 @@
+.portafolio {
+    position: relative;
+     padding: 0;
+    //background: antiquewhite;
+
+    .portafolio_title {
+      position: absolute;
+      z-index: 5;
+      //top: 0;
+    }
+    .portafolio_item{
+      .portafolio_hover{
+        display: none;
+        position: absolute;
+        transition: all 0.5s ease;
+      }
+      &:hover{
+        .portafolio_hover{
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: rgba( 10, 10, 10, 0.5 );
+          transition:  all 0.5s ease;
+        }
+      }
+    }
+
+
+}

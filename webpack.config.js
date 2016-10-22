@@ -29,6 +29,7 @@ module.exports = {
       Item: 'app/components/Item.jsx',
       Footer: 'app/components/Footer.jsx',
       Form: 'app/components/Form.jsx',
+      Logo: 'app/components/Logo.jsx',
       applicationStyles: 'app/styles/app.css'
     },
     extensions: ['', '.js', '.jsx']
